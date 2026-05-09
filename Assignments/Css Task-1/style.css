@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+/* Layout design start here  */
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  padding: 2%;
+  display: flex;
+}
+#box1 {
+  padding: 1% 2%;
+  height: 100%;
+  width: 60%;
+  background-color: #fbc60b;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+#box2 {
+  padding: 1% 2%;
+  height: 100%;
+  width: 40%;
+  background-color: #fae7b4;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+/* Layout design end here  */
+
+/* Logo design start here  */
+.logo img {
+  height: 80px;
+}
+/* Logo design end here  */
+/* Logo design start here  */
+/* Logo design end here  */
+.pikachu img {
+  height: 90%;
+  position: absolute;
+  left: 42%;
+  top: 10%;
+}
+/* Menu icon design start here  */
+#box2 i {
+  font-size: 36px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+/* Menu icon design end here  */
+.content {
+  padding-top: 20%;
+}
+.subHeading {
+  padding-left: 20px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 8px;
+}
+.mainHeading {
+  font-size: 110px;
+  padding-left: 10px;
+}
+.para {
+  padding-left: 15px;
+  width: 62%;
+  color: #343434;
+  line-height: 1.5;
+}
+.numberBox {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+.number {
+  padding-left: 15px;
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-weight: 900;
+  color: #2a2a2a;
+}
+.numberBox::before {
+  content: ""; /* Empty string still lets you create shapes */
+  display: block;
+  width: 5%;
+  height: 2px;
+  background: currentColor;
+  color: #2a2a2a;
+}
+/* Pokeball design start here  */
+
+.pokeball img {
+  height: 150px;
+  position: absolute;
+  top: 75%;
+  margin-top: 15px;
+  opacity: 0.2;
+}
+/* Pokeball design end here  */
+
+/* Buttons added on right side */
+.dott1 {
+  background-color: black;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+}
+.dott1::first-letter {
+  font-size: 3em;
+  float: left;
+  margin-right: 4px;
+}
+.dott2 {
+  background-color: #fbc60b;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 53%;
+  right: 5%;
+}
+.dott2::first-letter {
+  font-size: 3em;
+  float: left;
+  margin-right: 4px;
+}
+.dott3 {
+  background-color: #fbc60b;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 56%;
+  right: 5%;
+}
+.dott3::first-letter {
+  font-size: 3em;
+  float: left;
+  margin-right: 4px;
+}
+.dott4 {
+  background-color: #fbc60b;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 59%;
+  right: 5%;
+}
+.dott4::first-letter {
+  font-size: 3em;
+  float: left;
+  margin-right: 4px;
+}
+.dott5 {
+  background-color: #fbc60b;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 62%;
+  right: 5%;
+}
+.dott5::first-letter {
+  font-size: 3em;
+  float: left;
+  margin-right: 4px;
+}
