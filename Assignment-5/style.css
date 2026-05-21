@@ -534,10 +534,10 @@ header hr {
   height: 100%;
   width: 100%;
 }
-/* .page8 {
+.page8 {
   height: 100%;
   width: 100%;
-}*/
+}
 
 .page9 {
   height: 100%;
@@ -576,19 +576,10 @@ header hr {
   font-size: 16px;
   margin-top: 30px;
 }
-.heading{
+.heading {
   text-align: start;
   padding-left: 100px;
 }
-
-
-
-
-
-
-
-
-
 
 .page10 {
   height: 100%;
