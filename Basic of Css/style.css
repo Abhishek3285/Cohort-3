@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* Box model is used to bassically a elements size 'Iska mtlb hai ki aapke element ke size se increase nahi hoga box-sizing: border-box se warna aapne agr border di hai to vo element ke size ko increase kr rha hai' */
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: black;
+}
+
+/* This is a '!important property that change a specificity on elements' */
+/* h1 {
+  color: yellow !important;
+  background-color: black;
+} */
+
+/* Here are ID's and Classes */
+/* Id is used to target a particular or uniquely identify element it have a more specificity than class, we can uses a ID's with the help of (#) symbol */
+/* #box {
+  height: 300px;
+  width: 300px;
+  background-color: crimson;
+} */
+
+/* Classes is used to target one or more element it have a less specificity than Id's and we can use a classes with the help of (.) */
+/* .box2 {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+} */
+
+/* Here are explation in Units like Pixels or Percentage */
+/* height: 400px; if you use a px unit it cannot be change a parent div or container */
+/* div {
+  width: 400px;
+  background-color: red;
+} */
+
+/* height: 40%; if you use a % unit it can be change a parent div or container */
+/* div {
+  width: 40%;
+  height: 40%;
+  background-color: red;
+} */
+/* .container {
+  height: 20%;
+  width: 20%;
+  background-color: blue;
+} */
+
+/* Here are explanation of Box model or margin padding */
+
+/* Margin is a imaginary space 'Jab kabhi bahar side space dena hoto margin use karte hai'  */
+/* We can use margin property define as a specific side  */
+/* .box {
+  height: 300px;
+  width: 300px;
+  background-color: blue;
+  margin-left: 20px;
+} */
+/* We can use margin property define as a specific side  
+.box {
+  margin-top: 5px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  height: 300px;
+  width: 300px;
+  background-color: blue;
+}
+*/
+
+/* We can use margin property define as a all sides are equal like this 
+.box {
+  margin: 20px;
+}
+*/
+/* We can use margin property define as a (top-bottom left-right)  side 
+.box {
+  margin: 20px 30px;
+}
+ */
+/* We can use margin property define as a each side have different margin like this 
+
+.box {
+  margin: 5px 10px 15px 20px;
+}
+   */
+
+/* Padding is used to element inside space 'Jab element ke under side space dena ho to padding use karte hai' */
+/* We can use Padding property define as a specific side  */
+/* .box {
+  height: 300px;
+  width: 300px;
+  background-color: blue;
+  margin-left: 20px;
+} */
+/* We can use Padding property define as a specific side  
+.box {
+  Padding-top: 5px;
+  Padding-right: 20px;
+  Padding-bottom: 30px;
+  Padding-left: 50px;
+  height: 300px;
+  width: 300px;
+  background-color: blue;
+}
+*/
+
+/* We can use Padding property define as a all sides are equal like this 
+.box {
+  Padding: 20px;
+}
+*/
+/* We can use Padding property define as a (top-bottom left-right)  side 
+.box {
+  Padding: 20px 30px;
+}
+ */
+/* We can use Padding property define as a each side have different margin like this 
+
+.box {
+  Padding: 5px 10px 15px 20px;
+}
+*/
+
+/* Border property is used to give a border on particular element */
+/* .box {
+  height: 300px;
+  width: 300px;
+  background-color: crimson;
+  border: 5px solid white;
+} */
+/* you can write a border property like this as well */
+/* .box {
+  height: 300px;
+  width: 300px;
+  background-color: crimson;
+  border-width: 10px;
+  border-style: dashed;
+  border-color: white;
+} */
+
+/* We can use a border radius to curved the edges of an element */
+/* .box {
+  border-radius: 50px;
+  height: 300px;
+  width: 300px;
+  background-color: crimson;
+  border: 5px solid white;
+  transition: all ease 0.5s;
+} */
+/* ------------------------------------------------------------------------------------ */
+/* Pseudo Classes there are lot of pseudo classes like hover, active, focused */
+
+/* Transitions a changes between two states ' Jab aap ek elements per hover ya koi or activity karte ho to vo kitna smooth transition ho rha hai ' */
+/* .box:hover {
+  background-color: blue;
+} */
+
+/* ********************************************* */
+/* Positions absolute is move a particular element and drop a previous position  */
+/* Positions absolute me jo element hai vo apni position se hath jata hai and hum usko kahi bhi move kr sakte hai */
+#box1 {
+  height: 200px;
+  width: 200px;
+  background-color: crimson;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+#box2 {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  position: absolute;
+  top: 100px;
+  left: 150px;
+}
+#box3 {
+  height: 200px;
+  width: 200px;
+  background-color: grey;
+}
+/* Z-index is used to take element upper level 'hum z-index tab use krte hai jab kisi element ko upar uthana ho ya fhir kisi element ko upar lana ho jitna jyada z-index utna upar vo element'  */
+
+#box2 {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /* How to center a div or any element using a transform property */
+  transform: translate(-50%, -50%);
+}

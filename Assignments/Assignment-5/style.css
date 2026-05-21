@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+main {
+  height: 100%;
+  width: 100%;
+  padding: 0 100px;
+  z-index: 10;
+}
+section {
+  width: 100%;
+  height: calc(100% - 102px);
+}
+nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  /* background-color: yellow; */
+}
+.logo {
+  display: flex;
+}
+.logo img {
+  width: 90px;
+}
+.logo h4 {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: serif;
+  padding: 5px 10px;
+  background-color: #edded5;
+  border-radius: 30px;
+  margin-left: 20px;
+}
+.menu {
+  padding-right: 70px;
+}
+.menu a {
+  margin: 20px;
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+.menu a::after {
+  content: "";
+  height: 1px;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transition: all ease 0.4s;
+}
+.menu a:hover::after {
+  width: 100%;
+}
+.menu a:nth-child(6):hover::after {
+  width: 0%;
+}
+.menu span {
+  background-color: #edded5;
+  padding: 2px 4px;
+  border-radius: 10px;
+}
+
+.menu button {
+  background-color: transparent;
+  color: black;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 10px 15px;
+  font-family: serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 15px;
+  transition: all ease 0.4s;
+}
+.menu button:hover {
+  background-color: black;
+  color: white;
+}
+
+header hr {
+  opacity: 0.2;
+}
+
+.hero {
+  padding-top: 200px;
+}
+.hero h1 {
+  font-size: 100px;
+  font-weight: 300;
+  font-family: sans-serif;
+  line-height: 100px;
+}
+.hero p {
+  font-size: 24px;
+  font-family: serif;
+  padding: 30px 0;
+  line-height: 36px;
+}
+.hero button {
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 24px;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+.hero button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  outline: none;
+}
+
+.marquee {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.mark-img {
+  display: flex;
+
+  animation-name: logomove;
+  animation-duration: 20s;
+
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.mark-img img {
+  display: flex;
+  height: 40px;
+  margin-right: 100px;
+}
+
+@keyframes logomove {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.cards {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.box {
+  padding: 30px 50px;
+  height: 400px;
+  width: 300px;
+  background-color: #f4f4f5;
+}
+.box h2 {
+  font-size: 28px;
+  font-weight: 300;
+  font-family: serif;
+  padding: 20px 0;
+}
+.box p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: serif;
+  line-height: 30px;
+  color: #52525c;
+  padding-bottom: 30px;
+}
+.box span {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: serif;
+  text-decoration: underline;
+}
+.sub-heading p {
+  font-size: 12px;
+  font-weight: 300;
+  font-family: serif;
+  margin-bottom: 20px;
+}
+.page3 {
+  height: 100%;
+  width: 100%;
+}
+.card-section {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 15% 1fr 5%;
+  grid-template-areas:
+    "top-heading top-heading"
+    "card1 card2"
+    "card1-info card2-info";
+  gap: 0px 30px;
+}
+
+.top-heading {
+  grid-area: top-heading;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card1 {
+  grid-area: card1;
+  overflow: hidden;
+}
+.card1-info {
+  grid-area: card1-info;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.card2 {
+  grid-area: card2;
+  overflow: hidden;
+}
+.card2-info {
+  grid-area: card2-info;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-heading h1 {
+  font-size: 54px;
+  font-weight: 300;
+  font-family: serif;
+}
+.top-heading button {
+  background-color: transparent;
+  color: black;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 10px 15px;
+  font-family: serif;
+  font-size: 14px;
+  font-weight: 300;
+  margin-left: 15px;
+  transition: all ease 0.4s;
+}
+.top-heading button:hover {
+  background-color: black;
+  color: white;
+}
+
+.card1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all ease 1s;
+}
+.card1 img:hover {
+  transform: scale(1.1);
+}
+.card1-info h1 {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: serif;
+}
+.card1-info button {
+  background-color: transparent;
+  color: black;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 5px 10px;
+  font-family: serif;
+  font-size: 14px;
+  font-weight: 300;
+  margin-left: 15px;
+  transition: all ease 0.4s;
+}
+.card1-info button:hover {
+  background-color: black;
+  color: white;
+}
+.card2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all ease 1s;
+}
+.card2 img:hover {
+  transform: scale(1.1);
+}
+.page4 {
+  height: 100%;
+  width: 100%;
+  margin-top: 70px;
+}
+.card-section2 {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 5% 15%;
+  grid-template-areas:
+    "card3 card4"
+    "card3-info card4-info";
+  gap: 0px 30px;
+}
+
+.card3 {
+  grid-area: card3;
+  overflow: hidden;
+}
+.card3-info {
+  grid-area: card3-info;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.card4 {
+  grid-area: card4;
+  overflow: hidden;
+}
+.card4-info {
+  grid-area: card4-info;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card3 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  transition: all ease 1s;
+}
+.card3 img:hover {
+  transform: scale(1.1);
+}
+.card4 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card3-info h1 {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: serif;
+}
+.card3-info button {
+  background-color: transparent;
+  color: black;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 5px 10px;
+  font-family: serif;
+  font-size: 14px;
+  font-weight: 300;
+  margin-left: 15px;
+  transition: all ease 0.4s;
+}
+.card3-info button:hover {
+  background-color: black;
+  color: white;
+}
+
+.page5 {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+}
+.page5 .sub-heading p {
+  font-family: serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+.cards-section {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  grid-template-areas:
+    "services brands clients space"
+    "space collab approaches philosophy";
+}
+.services {
+  background-color: #f1f5f9;
+  grid-area: services;
+}
+.brands {
+  background-color: #f1f6f5;
+  grid-area: brands;
+}
+.clients {
+  background-color: #f8f8f8;
+  grid-area: clients;
+}
+.collab {
+  background-color: #f8f8f8;
+  grid-area: collab;
+}
+.approaches {
+  background-color: #f8ede3;
+  grid-area: approaches;
+}
+.philosophy {
+  background-color: #fffae7;
+  grid-area: philosophy;
+}
+.space {
+  background-color: black;
+  grid-area: space;
+}
