@@ -193,6 +193,9 @@ header hr {
   font-family: serif;
   text-decoration: underline;
 }
+.sub-heading {
+  margin-bottom: 36px;
+}
 .sub-heading p {
   font-size: 12px;
   font-weight: 300;
@@ -310,7 +313,7 @@ header hr {
 .page4 {
   height: 100%;
   width: 100%;
-  margin-top: 70px;
+  margin-top: 100px;
 }
 .card-section2 {
   height: 100%;
@@ -387,7 +390,7 @@ header hr {
 .page5 {
   height: 100%;
   width: 100%;
-  /* background-color: red; */
+  margin-bottom: 50px;
 }
 .page5 .sub-heading p {
   font-family: serif;
@@ -400,10 +403,15 @@ header hr {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-
   grid-template-areas:
-    "services brands clients space"
-    "space collab approaches philosophy";
+    "services brands clients . "
+    " . collab approaches philosophy";
+
+  gap: 30px;
+  justify-content: center;
+}
+.cards-section div {
+  padding: 50px;
 }
 .services {
   background-color: #f1f5f9;
@@ -412,24 +420,333 @@ header hr {
 .brands {
   background-color: #f1f6f5;
   grid-area: brands;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .clients {
   background-color: #f8f8f8;
   grid-area: clients;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .collab {
   background-color: #f8f8f8;
   grid-area: collab;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .approaches {
   background-color: #f8ede3;
   grid-area: approaches;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .philosophy {
   background-color: #fffae7;
   grid-area: philosophy;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.space {
+.services p {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: serif;
+}
+.services h2 {
+  padding: 50px 0;
+  font-size: 24px;
+  font-weight: 300;
+  font-family: serif;
+}
+.services button {
   background-color: black;
-  grid-area: space;
+  color: white;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-family: serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 40px;
+}
+.brands h4 {
+  font-weight: 300;
+  font-size: 14px;
+  font-family: serif;
+  text-transform: uppercase;
+}
+.brands h1 {
+  font-weight: 300;
+  font-size: 20px;
+  font-family: serif;
+  text-transform: uppercase;
+}
+.clients h4 {
+  font-weight: 300;
+  font-size: 14px;
+  font-family: serif;
+  text-transform: uppercase;
+}
+.clients h1 {
+  font-weight: 300;
+  font-size: 20px;
+  font-family: serif;
+  text-transform: uppercase;
+}
+.page6 {
+  height: 100%;
+  width: 100%;
+  padding: 100px 0;
+}
+.content-page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding-left: 25%;
+  flex-direction: column;
+}
+.content-page h2 {
+  font-weight: 300;
+  font-size: 50px;
+  font-family: serif;
+  padding-top: 50px;
+}
+.para {
+  width: 70%;
+  display: flex;
+  padding-top: 50px;
+  gap: 50px;
+}
+.para p {
+  color: oklch(0.442 0.017 285.786);
+  font-family: serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+}
+/* .page7 {
+  height: 100%;
+  width: 100%;
+}
+.page8 {
+  height: 100%;
+  width: 100%;
+} */
+
+.page9 {
+  height: 100%;
+  width: 100%;
+}
+.contact-page {
+  height: 80%;
+  width: 100%;
+  background-color: #f1f6f5;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 100px 0;
+}
+.contact-heading {
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 80px;
+}
+.contact-para {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  padding: 20px 0;
+}
+.contact-btn {
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 24px;
+  font-family: serif;
+  font-size: 16px;
+  margin-top: 30px;
+}
+.heading {
+  text-align: start;
+  padding-left: 100px;
+}
+
+.page10 {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+}
+.blog-page {
+  width: 100%;
+  height: 100%;
+}
+.blog-heading p {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.blog-cards {
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.blog1 {
+  width: 350px;
+  height: 350px;
+}
+.blog1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.blog1 h2 {
+  font-family: serif;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 10px 0 20px 0;
+}
+.blog1 p {
+  font-size: 16px;
+}
+
+footer {
+  height: 70%;
+  width: 100%;
+}
+.foot-section {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 80% 10% 10%;
+  grid-template-areas:
+    "logo-card pages-card cms-card utility-card"
+    ". . . ."
+    "copyright copyright . privacy";
+}
+.logo-card {
+  grid-area: logo-card;
+}
+.pages-card {
+  grid-area: pages-card;
+  margin-left: 20px;
+}
+.cms-card {
+  grid-area: cms-card;
+  margin-left: 20px;
+}
+.utility-card {
+  grid-area: utility-card;
+}
+.copyright {
+  grid-area: copyright;
+}
+.privacy {
+  grid-area: privacy;
+}
+.logo-card img {
+  width: 100px;
+  padding-bottom: 50px;
+}
+.icons i {
+  color: black;
+  background-color: #f0f8ff;
+  padding: 8px;
+  font-weight: 500;
+  border-radius: 50%;
+  font-size: 18px;
+}
+.pages-card h2 {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: serif;
+  padding-bottom: 15px;
+}
+.pages-card hr {
+  margin-bottom: 15px;
+}
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.menu-card a {
+  position: relative;
+  width: fit-content;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: serif;
+}
+
+.menu-card a::after {
+  content: "";
+  height: 1px;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transition: all ease 0.4s;
+}
+.menu-card a:hover::after {
+  width: 100%;
+  height: 1px;
+}
+
+.menu-card button {
+  width: 50%;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 24px;
+  font-family: serif;
+  font-size: 16px;
+}
+.cms-card h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: serif;
+  padding-bottom: 15px;
+}
+.copyright span {
+  color: #9f9fa9;
+  font-family: serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+.copyright a {
+  color: black;
+  font-family: serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+.privacy {
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+}
+.privacy span {
+  color: #9f9fa9;
+  font-family: serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: end;
 }
