@@ -1,0 +1,194 @@
+@font-face {
+  font-family: reckless;
+  src: url(./fonts/RecklessCondensedS-TRIAL-Book.woff);
+}
+@font-face {
+  font-family: figtree;
+  src: url(./fonts//figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: #fbf9eb;
+  /* padding: 1vw; */
+}
+
+nav {
+  width: 100%;
+  background-color: #fffefb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: reckless;
+  padding: 0.8rem 1rem;
+  border-radius: 1vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  margin-top: 10px;
+}
+nav i {
+  font-size: 2rem;
+  width: 33%;
+}
+
+.nav-part1 {
+  width: 33%;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-weight: 100;
+  font-family: reckless;
+  display: none;
+}
+.nav-part1 h3 {
+  font-weight: 300;
+}
+
+nav .nav-part2 {
+  max-width: 30%;
+  height: auto;
+  display: flex;
+}
+
+.nav-part2 img {
+  width: 100%;
+  object-fit: cover;
+}
+
+nav .nav-part3 {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: roboto mono;
+  font-size: 0.8rem;
+  justify-content: end;
+}
+.nav-part3 h3 {
+  font-weight: 500;
+  display: none;
+}
+
+.nav-part3 svg {
+  width: 5vw;
+}
+
+#section1 {
+  width: 100%;
+  height: 90vh;
+  background-image: url(./assets/hero-mobile.webp);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 2rem 1rem;
+  gap: 1rem;
+}
+
+#section1 h1 {
+  font-size: clamp(4rem, 4vw, 4rem);
+  font-weight: 500;
+  font-family: reckless;
+  color: white;
+  text-align: center;
+}
+#section1 p {
+  font-size: clamp(1.1rem, 1vw, 1rem);
+  font-weight: 400;
+  font-family: figtree;
+  color: white;
+  text-align: center;
+}
+#section1 button {
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: figtree;
+  font-weight: 400;
+  padding: 0.8rem 3.5rem;
+  background-color: #2a2857;
+  color: white;
+  border-radius: 10vw;
+  border: 1px solid black;
+}
+#section1 button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  /* Tablets */
+}
+
+@media (min-width: 1024px) {
+  /* Desktop */
+  nav {
+    padding: 0.5rem 1rem;
+  }
+  .nav-part1 {
+    width: 33%;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+    font-family: reckless;
+  }
+  nav i {
+    display: none;
+  }
+  nav .nav-part3 {
+    width: 50%;
+  }
+
+  .nav-part3 h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+    display: block;
+    white-space: nowrap;
+    font-size: 0.8rem;
+  }
+  #section1 {
+    width: 100%;
+    height: 90vh;
+    background-image: url(./assets/hero\ imgg.webp);
+    align-items: start;
+    padding: 3rem 3rem;
+    gap: 1rem;
+  }
+
+  #section1 h1 {
+    font-size: clamp(3rem, 4vw, 4rem);
+    font-weight: 500;
+    font-family: reckless;
+    color: white;
+    width: 30%;
+    text-align: start;
+  }
+  #section1 p {
+    width: 36%;
+    font-size: clamp(1rem, 1vw, 1rem);
+    font-weight: 400;
+    text-align: start;
+    font-family: figtree;
+    color: white;
+  }
+  #section1 button {
+    width: 20%;
+    font-size: 1.2rem;
+  }
+}
